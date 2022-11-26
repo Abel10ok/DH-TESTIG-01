@@ -1,5 +1,4 @@
-const { generateText, validateInput } = require("../util");
-
+const { generateText, validateInput, createElement } = require("../util");
 describe("Pruebas de salidas de datos", () => {
   test("salida de nombre y edad", () => {
     const text = generateText("Abel", 25);
@@ -18,7 +17,8 @@ describe("Pruebas de salidas de datos", () => {
 });
 
 // -------------------------------------
-describe("validar funcion", () => {
+
+describe("validar funcion input", () => {
   test("validar input funcion text", () => {
     const text = validateInput("texto");
     expect(text).toBeTruthy;
@@ -27,6 +27,24 @@ describe("validar funcion", () => {
   // PRUEBA MIA NO SE BIEN
   test("validar input funcion vacio", () => {
     const text = validateInput("");
-    expect(text).toBeTruthy;
+    expect(text).toBe(false);
+  });
+
+  test("validar input funcion vacio con espacios", () => {
+    const text = validateInput("  ");
+    expect(text).toBe(false);
+  });
+
+  test("validar input funcion con String + espacio", () => {
+    const text = validateInput("a bel ");
+    expect(text).toBe(true);
+  });
+});
+
+// ----------------------------------
+describe("validar funcion creatElement", () => {
+  test("validar creatElement funcion vacia", () => {
+    const text = createElement();
+    expect(text).toBe(null);
   });
 });

@@ -5,6 +5,7 @@ exports.generateText = (name, age) => {
 
 exports.createElement = (type, text, className) => {
   // Creates a new HTML element and returns it
+
   const newElement = document.createElement(type);
   newElement.classList.add(className);
   newElement.textContent = text;
@@ -16,6 +17,11 @@ exports.validateInput = (text, notEmpty, isNumber) => {
   if (!text) {
     return false;
   }
+
+  if (text.trim().length === 0) {
+    return false;
+  }
+
   if (notEmpty && text.trim().length === 0) {
     return false;
   }

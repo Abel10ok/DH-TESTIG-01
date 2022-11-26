@@ -1,0 +1,17 @@
+{
+  "name": "clase16tarea",
+  "version": "1.0.0",
+  "description": "tarea clase 16",
+  "main": "calc.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node calc.js",
+    "dev": "nodemon calc.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20"
+  }
+}
