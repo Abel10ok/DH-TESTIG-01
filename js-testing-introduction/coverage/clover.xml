@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669252135076" clover="3.2.0">
-  <project timestamp="1669252135076" name="All files">
+<coverage generated="1670008416971" clover="3.2.0">
+  <project timestamp="1670008416971" name="All files">
     <metrics statements="17" coveredstatements="12" conditionals="12" coveredconditionals="8" methods="3" coveredmethods="3" elements="32" coveredelements="23" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
     <file name="util.js" path="C:\Users\Dario\OneDrive\Desktop\DH-TESTIG-01\js-testing-introduction\util.js">
       <metrics statements="17" coveredstatements="12" conditionals="12" coveredconditionals="8" methods="3" coveredmethods="3"/>

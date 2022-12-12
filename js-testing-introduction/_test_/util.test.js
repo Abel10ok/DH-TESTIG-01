@@ -44,7 +44,9 @@ describe("validar funcion input", () => {
 // ----------------------------------
 describe("validar funcion creatElement", () => {
   test("validar creatElement funcion vacia", () => {
-    const text = createElement();
-    expect(text).toBe(null);
+    const text = createElement("li", "abel", "user-item");
+    const text2 = createElement("li", null, "user-item");
+    expect(text.textContent).toMatch(/abel/);
+    // expect(text.textCont).toBe(" ");
   });
 });
